@@ -1,0 +1,76 @@
+{
+  "kelas": [
+    {
+      "id": "K001", "kode_kelas": "TI-1A", "nama_kelas": "Teknik Informatika 1A", "kapasitas": 40,
+      "matakuliah_id": "MK001", "dosen_id": "1001",
+      "mahasiswa_ids": ["20211001", "20211002", "20211003"]
+    },
+    {
+      "id": "K002", "kode_kelas": "TI-1B", "nama_kelas": "Teknik Informatika 1B", "kapasitas": 40,
+      "matakuliah_id": "MK002", "dosen_id": "1006",
+      "mahasiswa_ids": ["20211004", "20211005"]
+    },
+    {
+      "id": "K003", "kode_kelas": "SI-1A", "nama_kelas": "Sistem Informasi 1A", "kapasitas": 35,
+      "matakuliah_id": null, "dosen_id": null,
+      "mahasiswa_ids": []
+    },
+    {
+      "id": "K004", "kode_kelas": "SI-1B", "nama_kelas": "Sistem Informasi 1B", "kapasitas": 35,
+      "matakuliah_id": "MK003", "dosen_id": "1002",
+      "mahasiswa_ids": ["20211006", "20211007"]
+    },
+    {
+      "id": "K005", "kode_kelas": "TI-2A", "nama_kelas": "Teknik Informatika 2A", "kapasitas": 40,
+      "matakuliah_id": "MK005", "dosen_id": "1004",
+      "mahasiswa_ids": ["20211001", "20211008"]
+    },
+    {
+      "id": "K006", "kode_kelas": "TI-2B", "nama_kelas": "Teknik Informatika 2B", "kapasitas": 40,
+      "matakuliah_id": null, "dosen_id": null,
+      "mahasiswa_ids": []
+    },
+    {
+      "id": "K007", "kode_kelas": "SI-2A", "nama_kelas": "Sistem Informasi 2A", "kapasitas": 35,
+      "matakuliah_id": "MK004", "dosen_id": "1005",
+      "mahasiswa_ids": ["20211002", "20211003", "20211006"]
+    }
+  ],
+  "users": [
+    { "id": "U001", "nama": "Admin Sistem", "email": "admin@example.com", "role": "Super Admin", "permissions": ["read", "write", "delete"] },
+    { "id": "U002", "nama": "Staf Akademik", "email": "staf@example.com", "role": "Admin", "permissions": ["read", "write"] },
+    { "id": "U003", "nama": "Operator Kelas", "email": "operator@example.com", "role": "User", "permissions": ["read"] },
+    { "id": "U004", "nama": "Koordinator Prodi", "email": "koordinator@example.com", "role": "Admin", "permissions": ["read", "write"] },
+    { "id": "U005", "nama": "Kepala Jurusan", "email": "kajur@example.com", "role": "Super Admin", "permissions": ["read", "write", "delete"] },
+    { "id": "U006", "nama": "Petugas Absensi", "email": "absensi@example.com", "role": "User", "permissions": ["read"] },
+    { "id": "U007", "nama": "Sekretariat", "email": "sekretariat@example.com", "role": "Admin", "permissions": ["read", "write"] }
+  ],
+  "dosen": [
+    { "id": "1001", "nidn": "1001", "nama": "Dr. Budi Raharjo, M.T.", "keahlian": "Pemrograman Web", "status": true, "max_sks": 12 },
+    { "id": "1002", "nidn": "1002", "nama": "Jane Smith, M.Kom.", "keahlian": "Sistem Informasi", "status": true, "max_sks": 12 },
+    { "id": "1003", "nidn": "1003", "nama": "Prof. Alan Turing", "keahlian": "Ilmu Komputer", "status": false, "max_sks": 12 },
+    { "id": "1004", "nidn": "1004", "nama": "Dr. Siti Rahayu, M.Sc.", "keahlian": "Kecerdasan Buatan", "status": true, "max_sks": 12 },
+    { "id": "1005", "nidn": "1005", "nama": "Ahmad Rifai, M.T.", "keahlian": "Jaringan Komputer", "status": true, "max_sks": 12 },
+    { "id": "1006", "nidn": "1006", "nama": "Dr. Dewi Puspita, M.Kom.", "keahlian": "Basis Data", "status": true, "max_sks": 12 },
+    { "id": "1007", "nidn": "1007", "nama": "Rudi Pratama, M.Si.", "keahlian": "Sistem Operasi", "status": false, "max_sks": 12 }
+  ],
+  "matakuliah": [
+    { "id": "MK001", "kode": "MK001", "nama_matkul": "Pemrograman Web", "sks": 3 },
+    { "id": "MK002", "kode": "MK002", "nama_matkul": "Basis Data", "sks": 3 },
+    { "id": "MK003", "kode": "MK003", "nama_matkul": "Struktur Data", "sks": 3 },
+    { "id": "MK004", "kode": "MK004", "nama_matkul": "Jaringan Komputer", "sks": 2 },
+    { "id": "MK005", "kode": "MK005", "nama_matkul": "Kecerdasan Buatan", "sks": 3 },
+    { "id": "MK006", "kode": "MK006", "nama_matkul": "Sistem Operasi", "sks": 3 },
+    { "id": "MK007", "kode": "MK007", "nama_matkul": "Pemrograman Mobile", "sks": 4 }
+  ],
+  "mahasiswa": [
+    { "id": "20211001", "nim": "20211001", "nama": "Budi Santoso", "status": true, "max_sks": 24 },
+    { "id": "20211002", "nim": "20211002", "nama": "Siti Aminah", "status": true, "max_sks": 24 },
+    { "id": "20211003", "nim": "20211003", "nama": "Ahmad Fauzi", "status": true, "max_sks": 24 },
+    { "id": "20211004", "nim": "20211004", "nama": "Dewi Lestari", "status": false, "max_sks": 24 },
+    { "id": "20211005", "nim": "20211005", "nama": "Rudi Hartono", "status": true, "max_sks": 24 },
+    { "id": "20211006", "nim": "20211006", "nama": "Rina Susanti", "status": true, "max_sks": 24 },
+    { "id": "20211007", "nim": "20211007", "nama": "Eko Prasetyo", "status": false, "max_sks": 24 },
+    { "id": "20211008", "nim": "20211008", "nama": "Nur Hidayah", "status": true, "max_sks": 24 }
+  ]
+}
